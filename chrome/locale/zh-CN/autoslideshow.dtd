@@ -1,0 +1,16 @@
+﻿<!ENTITY toolbarbutton.start.slideshow "開始autuslideshow">
+<!ENTITY toolbarbutton.slideshow "Slideshow">
+<!ENTITY toolbarbutton.pause.slideshow.return "暫停 (Return)">
+<!ENTITY toolbarbutton.pause "暫停">
+<!ENTITY toolbarbutton.previous.image.cursor.left "前一張 (Cursor Left)">
+<!ENTITY toolbarbutton.previous.image "前一張">
+<!ENTITY textbox.current.image "當前圖片">
+<!ENTITY description.total.number.of.images "圖片總數">
+<!ENTITY toolbarbutton.next.image.cursor.right "下一張 (Cursor Right)">
+<!ENTITY toolbarbutton.next.image "下一張">
+<!ENTITY toolbarbutton.settings "設置">
+<!ENTITY toolbarbutton.overview "鳥瞰圖">
+<!ENTITY toolbarbutton.saveall "全部保存">
+<!ENTITY toolbarbutton.toggle.toolbar "自動演示">
+
+<!ENTITY toolbar.slideshow.toolbar "自動演示工具欄">

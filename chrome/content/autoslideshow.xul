@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://autoslideshow/skin/autoslideshow.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://autoslideshow/locale/autoslideshow.dtd" >
+
+
+<overlay id="galerybrowser-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+         
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/asutil.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/asthumbbar.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/autoslideshow.js" />
+    
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/GoogleImageFinder.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/YahooImageFinder.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/StudiVzImageFinder.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/PBaseImageFinder.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/PicassaImageFinder.js" />
+    
+    
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/asimagefinder.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/asimage.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/asoverview.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/aseffects.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/asslideshow.js" />
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/slideshowdocument.js" />
+    <script type="application/x-javascript" src=" chrome://global/content/globalOverlay.js" />
+
+            
+        
+	<keyset id="mainKeyset">
+		<key id="AutoSlideshow_nextkey" modifiers="" keycode="VK_RIGHT" command="AutoSlideshow_cmd_next" />
+		<key id="AutoSlideshow_prevkey" modifiers="" keycode="VK_LEFT" command="AutoSlideshow_cmd_prev" />
+		<key id="AutoSlideshow_firstkey" modifiers="" keycode="VK_UP" command="AutoSlideshow_cmd_first" />
+		<key id="AutoSlideshow_lastkey"  modifiers="" keycode="VK_DOWN" command="AutoSlideshow_cmd_last" />
+		<key id="AutoSlideshow_pausekey" modifiers="" keycode="VK_RETURN" command="AutoSlideshow_cmd_togglePauseSlideshow" />
+	</keyset>
+
+	<commandset id="mainCommandSet">
+		<command id="AutoSlideshow_cmd_slideshow" oncommand="button_slideshow();"/>
+		<command id="AutoSlideshow_cmd_next" oncommand="button_next();" disabled="true"/>
+		<command id="AutoSlideshow_cmd_prev" oncommand="button_prev();" disabled="true"/>
+		<command id="AutoSlideshow_cmd_first" oncommand="first();" disabled="true"/>
+		<command id="AutoSlideshow_cmd_last" oncommand="last();" disabled="true"/>
+		<command id="AutoSlideshow_cmd_togglePauseSlideshow" oncommand="button_togglePauseSlideshow();" disabled="true"/>
+		<command id="AutoSlideshow_cmd_openSettingsWindow" oncommand="openSettingsWindow();"/>
+		<command id="AutoSlideshow_cmd_saveAll" oncommand="button_saveall();" disabled="true"/>
+		<command id="AutoSlideshow_cmd_overview" oncommand="button_overview();" disabled="false"/>
+		<command id="AutoSlideshow_cmd_toggleToolbar" oncommand="button_toggleToolbar();" />
+	</commandset>
+		
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton type="checkbox" id="AutoSlideshow-Button" tooltiptext="&toolbarbutton.start.slideshow;" 
+			label="&toolbarbutton.slideshow;" command="AutoSlideshow_cmd_slideshow" autoCheck="false" />
+
+		<toolbarbutton type="checkbox" id="AutoSlideshow-Button-Pause" tooltiptext="&toolbarbutton.pause.slideshow.return;" 
+			label="&toolbarbutton.pause;" command="AutoSlideshow_cmd_togglePauseSlideshow" autoCheck="false"/>            
+
+		<toolbarbutton id="AutoSlideshow-Button-Prev-Picture" tooltiptext="&toolbarbutton.previous.image.cursor.left;" 
+			label="&toolbarbutton.previous.image;" command="AutoSlideshow_cmd_prev" />
+
+		<toolbaritem id="AutoSlideshow-TBItem-ImageNumber" align="center">
+			<textbox id="AutoSlideshow-Textbox-ImageNumber" class="plain" tooltiptext="&textbox.current.image;" 
+				onchange="textbox_changeimage();" />
+			<textbox id="AutoSlideshow-Label-ImageCount" class="plain" value=" / - " tooltiptext="&description.total.number.of.images;" 
+				readonly="true" disabled="true"/>
+		</toolbaritem>	
+
+		<toolbarbutton id="AutoSlideshow-Button-Next-Picture" tooltiptext="&toolbarbutton.next.image.cursor.right;" 
+			label="&toolbarbutton.next.image;" command="AutoSlideshow_cmd_next" />
+		
+		<toolbarbutton id="AutoSlideshow-Button-Preferences" tooltiptext="&toolbarbutton.settings;" 
+			label="&toolbarbutton.settings;" command="AutoSlideshow_cmd_openSettingsWindow"/>
+
+
+		<toolbarbutton id="AutoSlideshow-Button-Save" tooltiptext="&toolbarbutton.saveall;" 
+			label="&toolbarbutton.saveall;" command="AutoSlideshow_cmd_saveAll"/>
+
+		<toolbarbutton type="checkbox" disabled="true" id="AutoSlideshow-Button-Overview" tooltiptext="&toolbarbutton.overview;" 
+			label="&toolbarbutton.overview;" command="AutoSlideshow_cmd_overview" autoCheck="false"/>
+			
+		<toolbarbutton id="AutoSlideshow-Button-Toggle-Toolbar" tooltiptext="&toolbarbutton.toggle.toolbar;" 
+		 	label="&toolbarbutton.toggle.toolbar;" command="AutoSlideshow_cmd_toggleToolbar" />
+		
+	</toolbarpalette>
+		
+
+    <toolbox id="navigator-toolbox">
+		<toolbar id="AutoSlideshow-Toolbar" toolbarname="&toolbar.slideshow.toolbar;" class="chromeclass-toolbar" 
+			context="toolbar-context-menu" inherits="collapsed,hidden" persist="collapsed,hidden" customizable="true" 
+			mode="icons" defaultset="AutoSlideshow-Button,AutoSlideshow-Button-Overview,AutoSlideshow-Button-Pause,AutoSlideshow-Button-Prev-Picture,AutoSlideshow-TBItem-ImageNumber,AutoSlideshow-TBItem-ImageCount,AutoSlideshow-Button-Next-Picture,AutoSlideshow-Button-Save,AutoSlideshow-Button-Preferences" 
+			collapsed="true" />
+    </toolbox>		
+    
+    <statusbar id="status-bar">  
+		<statusbarpanel id="AutoSlideshow-statusbar-panel" 
+			hidden="false"
+			class="statusbarpanel-menu-iconic"
+			tooltiptext="&toolbarbutton.start.slideshow;"
+			onclick="button_slideshow();">  
+		</statusbarpanel>    
+	</statusbar>
+
+</overlay>

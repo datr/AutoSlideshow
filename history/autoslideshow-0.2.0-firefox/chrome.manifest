@@ -1,0 +1,12 @@
+overlay 	chrome://browser/content/browser.xul 			chrome://autoslideshow/content/autoslideshow.xul
+overlay	  	chrome://global/content/customizeToolbar.xul   	chrome://autoslideshow/content/autoslideshow.xul
+
+
+content 	autoslideshow 					jar:chrome/autoslideshow.jar!/content/
+skin 		autoslideshow 	classic/1.0 	jar:chrome/autoslideshow.jar!/skin/
+
+locale		autoslideshow 	en-US 			jar:chrome/autoslideshow.jar!/locale/en-US/
+locale 		autoslideshow 	de-DE 			jar:chrome/autoslideshow.jar!/locale/de-DE/
+
+
+

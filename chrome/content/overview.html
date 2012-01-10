@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+	<script type = "text/javascript" src = "mouseenter.js"></script>
+	<script type = "text/javascript" src = "slideshowdocument.js"></script>
+	<link rel="stylesheet" type="text/css" href="chrome://autoslideshow/skin/styles.css">
+	<title>AutoSlideshow - Overview</title>
+</head>
+	<body id="body" 
+		style="background:#000000 url(chrome://autoslideshow/skin/loading.gif) no-repeat fixed center center"
+		onload="ssdInit();"
+		>
+
+		
+				
+		<div class="header">
+			<table border="0">
+				<tr>
+				<td class="header_title_icon">
+				<IMG SRC="../skin/autoslideshow2.png" WIDTH="60" HEIGHT="56" BORDER=0>
+				</td>
+				<td class="header_title">
+					AutoSlideshow
+				</td>
+			</table>	
+		</div>	
+		
+		<!--
+		<div class="fade_box"></div>
+		-->
+		
+		<div id="thumb_content" class="thumb_content">
+		</div>
+		
+		<div class="menubar1" id="menubar">
+
+			<img class="button" id="close" SRC="../skin/OSClose.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+			<img class="button" id="play" SRC="../skin/OSPlay.gif" WIDTH="36" HEIGHT="36" ALT=""
+					style="margin-right:10px"></img>
+			<img class="button_disabled" id="prev" SRC="../skin/OSPrev.gif" WIDTH="36" HEIGHT="36" ALT="" 
+			>
+			<div style="display:inline; height:100%; width: 50px;font-size:15px;font-family:courier;color: white;">
+				<div style="position:absolute;display:inline; top:5px; text-align:right;width:16px" id="imagenumber">
+				0
+				</div>
+				<div style="position:relative;display:inline; bottom:5px;" id="imagecount">
+				0
+				</div>
+			</div>
+			<img class="button_disabled" id="next" SRC="../skin/OSNext.gif" WIDTH="36" HEIGHT="36" ALT=""
+					style="margin-right:10px"></img>
+			<img class="button" id="toggleDisabledImages" SRC="../skin/OSFilter.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+			<img class="button" id="save" SRC="../skin/OSSave.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+		</div>
+	
+	</body>
+</html>
+
+
+

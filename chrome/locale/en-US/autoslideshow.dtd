@@ -1,0 +1,16 @@
+<!ENTITY toolbarbutton.start.slideshow "Slideshow On/Off">
+<!ENTITY toolbarbutton.slideshow "Slideshow">
+<!ENTITY toolbarbutton.pause.slideshow.return "Pause Slideshow (Return)">
+<!ENTITY toolbarbutton.pause "Pause">
+<!ENTITY toolbarbutton.previous.image.cursor.left "Previous image (Cursor Left)">
+<!ENTITY toolbarbutton.previous.image "Previous image">
+<!ENTITY textbox.current.image "Current image">
+<!ENTITY description.total.number.of.images "Total number of images">
+<!ENTITY toolbarbutton.next.image.cursor.right "Next image (Cursor Right)">
+<!ENTITY toolbarbutton.next.image "Next image">
+<!ENTITY toolbarbutton.settings "Settings">
+<!ENTITY toolbarbutton.overview "Overview On/Off">
+<!ENTITY toolbarbutton.saveall "Save all">
+<!ENTITY toolbarbutton.toggle.toolbar "AutoSlideshow">
+
+<!ENTITY toolbar.slideshow.toolbar "AutoSlideshow Toolbar">

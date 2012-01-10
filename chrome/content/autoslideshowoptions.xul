@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://autoslideshow/locale/autoslideshowoptions.dtd" >
+
+
+<dialog 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	id="autoslideshow-options-window" 
+	title="&dialog.configure.autoslideshow;" 
+	orient="vertical"
+	autostretch="never" 
+	persist="screenX,screenY"
+	buttons="accept,cancel" 
+	ondialogaccept="return doOK();" 
+	ondialogcancel="return doCancel();" 
+	onload="init();">
+    
+    <script type="application/x-javascript" src="chrome://autoslideshow/content/autoslideshowoptions.js">
+    </script>
+    
+    <script type="application/x-javascript" src="chrome://mozapps/content/extensions/extensions.js">
+    </script>
+    
+    <keyset id="optionsKeyset">
+        <key id="cancel-key" keycode="VK_ESCAPE" oncommand="window.close();" />
+    </keyset>
+
+
+	<tabbox id="AutoSlideshow-OptionsTabbox">
+		<tabs>
+			<tab label="&tab.general;" />
+			<tab label="&tab.images;" />
+			<tab label="&tab.overview;" />
+		</tabs>
+		<tabpanels>
+			<tabpanel id="AutoSlideshow-GeneralOptionsTab" orient="vertical">
+				<hbox>
+					<label value="&label.next.image.after;" />
+					<textbox id="AutoSlideshow-Textbox-Delay" value="" width="40" />
+					<label value="&label.seconds;" />
+				</hbox>
+				
+				<hbox>
+					<label value="&label.scannedtabs;"/>
+					<menulist id="AutoSlideshow-Menulist-scannedTabs">
+						<menupopup>
+							<menuitem value="0" label="&menuitem.scannedtabs1;" />
+							<menuitem value="1" label="&menuitem.scannedtabs2;" />
+							<menuitem value="2" label="&menuitem.scannedtabs3;" />
+						</menupopup>
+					</menulist>
+				</hbox>
+				
+				<groupbox orient="vertical">
+					<caption label="&caption.action.after.last.image;" />
+					<radiogroup id="AutoSlideshow-Radiogroup-SlideshowEnd">
+					<vbox>
+						<hbox style="valign:middle">
+						<radio id="AutoSlideshow-Radio-End" value="end" label="&radio.end.slideshow;" />
+						<radio id="AutoSlideshow-Radio-Restart" value="restart" label="&radio.restart.slideshow;" />
+						</hbox>
+						<hbox>
+						<radio id="AutoSlideshow-Radio-Pause" value="pause" label="&radio.pause.slideshow;" />
+						<radio id="AutoSlideshow-Radio-Overview" value="overview" label="&radio.pause.overview;" />
+						</hbox>
+					</vbox>
+					</radiogroup>
+				</groupbox>
+				<groupbox orient="vertical">
+					<caption label="&caption.crossfade.effects;" />
+					<checkbox id="AutoSlideshow-check-effects" label="&checkbox.enable.crossfade.effects;" checked="true" />
+					<hbox>
+						<label value="&label.effect;" />
+						<menulist id="AutoSlideshow-Menulist-effects" label="">
+							<menupopup>
+							<menuitem id="AutoSlideshow-Menuitem-random" value="0" label="&menuitem.random;" />
+							<menuitem id="AutoSlideshow-Menuitem-fadeinfadeout" value="1" label="&menuitem.fade.in.fade.out;" />
+							<menuitem id="AutoSlideshow-Menuitem-zoom" value="2" label="&menuitem.zoom.effect;" />
+							</menupopup>
+						</menulist>
+					</hbox>
+				</groupbox>
+			</tabpanel>
+			<tabpanel id="AutoSlideshow-ImagesTab" orient="vertical">
+				<caption label="&label.imageselection;"/>
+				<hbox>
+				<caption label="&label.maxgap;" />
+				<textbox id="AutoSlideshow-text-maxgap" value="5" width="50" />
+				</hbox>	
+				<groupbox orient="vertical">
+					<caption label="&caption.images;"/>
+					<radiogroup id="Autoslideshow-Radiogroup-images">
+					<radio id="AutoSlideshow-radio-images" value="never" label="&radio.images.never;" checked="false"/>
+					<radio id="AutoSlideshow-radio-images" value="always" label="&radio.images.always;" checked="false"/>
+					<radio id="AutoSlideshow-radio-images" value="ondemand" label="&radio.images.ondemand;" checked="true"/>
+					</radiogroup>
+					<groupbox orient="vertical">
+					<caption label="&caption.images.minsize;"/>
+					<hbox>
+						<label value="&label.image.minwidth;" />
+						<textbox id="AutoSlideshow-text-imagesMinWidth" value="0" width="50"/>
+						<label value="px" />
+						<label value="&label.image.minheight;" />
+						<textbox id="AutoSlideshow-text-imagesMinHeight" value="0" width="50" />
+						<label value="px" />
+					</hbox>
+					</groupbox>
+				</groupbox>
+				<hbox>
+					<checkbox id="AutoSlideshow-check-zoom" label="&checkbox.zoom;" checked="true" />
+					<label value="&label.zoom.max;"/>
+					<menulist id="AutoSlideshow-Menulist-zoomMax" label="">
+						<menupopup>
+						<menuitem id="AutoSlideshow-Menuitem_zoom_1_5" value="1.5" label="&menuitem.zoom_1_5;" />
+						<menuitem id="AutoSlideshow-Menuitem_zoom_2" value="2" label="&menuitem.zoom_2;" />
+						<menuitem id="AutoSlideshow-Menuitem_zoom_4" value="4" label="&menuitem.zoom_4;" />
+						<menuitem id="AutoSlideshow-Menuitem_zoom_window" value="-1" label="&menuitem.zoom_window;" />					
+						</menupopup>
+					</menulist>
+				</hbox>
+			</tabpanel>
+			<tabpanel id="AutoSlideshow-OverviewTab" orient="vertical">
+				<hbox>
+					<label value="&label.thumbs.size;" />
+					<textbox id="AutoSlideshow-text-thumbsSize" value="0" width="50"/>
+					<label value="px" />
+				</hbox>
+				<hbox>
+					<checkbox id="AutoSlideshow-check-osmenu" label="&checkbox.osmenu;" checked="true" />
+				</hbox>
+				<checkbox id="AutoSlideshow-check-fullscreen" label="&checkbox.fullscreen;" checked="false" />
+			</tabpanel>
+		</tabpanels>
+	</tabbox>
+	<label value="&label.commited.info;" />
+</dialog>

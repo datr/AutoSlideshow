@@ -1,0 +1,4 @@
+function initFullscreenDialog(){
+	alert("test")
+
+}

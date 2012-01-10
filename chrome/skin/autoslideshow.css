@@ -1,0 +1,128 @@
+
+
+#AutoSlideshow-Button {
+    list-style-image: url("chrome://autoslideshow/skin/Slideshow24.gif");
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button {
+    list-style-image: url("chrome://autoslideshow/skin/Slideshow16.gif");
+}
+
+#AutoSlideshow-Button[disabled="true"]{
+    list-style-image: url("chrome://autoslideshow/skin/Slideshow16_disabled.gif");
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button[disabled="true"]{
+    list-style-image: url("chrome://autoslideshow/skin/Slideshow16_disabled.gif");
+}
+
+#AutoSlideshow-Button-Pause {
+    list-style-image: url("chrome://autoslideshow/skin/Pause24.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Pause {
+    list-style-image: url("chrome://autoslideshow/skin/Pause16.gif")
+}
+
+#AutoSlideshow-Button-Pause[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/Pause24_disabled.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Pause[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/Pause16_disabled.gif")
+}
+
+#AutoSlideshow-Button-Next-Picture {
+    list-style-image: url("chrome://autoslideshow/skin/Forward24.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Next-Picture {
+    list-style-image: url("chrome://autoslideshow/skin/Forward16.png")
+}
+
+#AutoSlideshow-Button-Next-Picture[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/Forward24_disabled.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Next-Picture[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/Forward16_disabled.gif")
+}
+
+#AutoSlideshow-Button-Prev-Picture {
+    list-style-image: url("chrome://autoslideshow/skin/Back24.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Prev-Picture {
+    list-style-image: url("chrome://autoslideshow/skin/Back16.png")
+}
+
+#AutoSlideshow-Button-Prev-Picture[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/Back24_disabled.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Prev-Picture[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/Back16_disabled.gif")
+}
+
+#AutoSlideshow-Button-Save {
+    list-style-image: url("chrome://autoslideshow/skin/SaveAll24.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Save {
+    list-style-image: url("chrome://autoslideshow/skin/SaveAll16.gif")
+}
+
+#AutoSlideshow-Button-Save[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/SaveAll24_disabled.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Save[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/SaveAll16_disabled.gif")
+}
+
+#AutoSlideshow-Button-Overview {
+    list-style-image: url("chrome://autoslideshow/skin/Overview24.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Overview {
+    list-style-image: url("chrome://autoslideshow/skin/Overview16.gif")
+}
+
+#AutoSlideshow-Button-Overview[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/Overview24_disabled.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Overview[disabled="true"] {
+    list-style-image: url("chrome://autoslideshow/skin/Overview16_disabled.gif")
+}
+
+#AutoSlideshow-Button-Preferences {
+    list-style-image: url("chrome://autoslideshow/skin/Settings24.gif")
+}
+toolbar[iconsize="small"] #AutoSlideshow-Button-Preferences {
+    list-style-image: url("chrome://autoslideshow/skin/Settings16.gif")
+}
+
+
+#AutoSlideshow-Label-ImageCount {
+	background-color: transparent;
+	font-size: 14pt !important;	
+	width: 45px !important;
+}
+
+toolbar[iconsize="small"] #AutoSlideshow-Label-ImageCount{
+	background-color: transparent;
+	font-size: 8pt !important;
+	width: 30px !important;
+}
+
+#AutoSlideshow-Textbox-ImageNumber{
+	font-size: 14pt !important;
+	width: 30px !important;
+}
+
+toolbar[iconsize="small"] #AutoSlideshow-Textbox-ImageNumber{
+	font-size: 8pt !important;
+	width: 20px !important;
+}
+
+#AutoSlideshow-Button-Toggle-Toolbar {
+		list-style-image: url("chrome://autoslideshow/skin/autoslideshow24.gif")
+}
+
+toolbar[iconsize="small"] #AutoSlideshow-Button-Toggle-Toolbar {
+		list-style-image: url("chrome://autoslideshow/skin/autoslideshow16.gif")
+}
+
+#AutoSlideshow-statusbar-panel {
+    list-style-image: url("chrome://autoslideshow/skin/autoslideshow16.gif");
+}
+

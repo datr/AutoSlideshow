@@ -1,0 +1,45 @@
+<!ENTITY dialog.configure.autoslideshow "Configure AutoSlideshow">
+<!ENTITY tab.general "General">
+<!ENTITY label.next.image.after "Next image after">
+<!ENTITY label.seconds "seconds">
+<!ENTITY caption.action.after.last.image "Action after last image">
+<!ENTITY radio.end.slideshow "End slideshow">
+<!ENTITY radio.restart.slideshow "Restart slideshow">
+<!ENTITY radio.pause.slideshow "Pause slideshow">
+<!ENTITY radio.pause.overview "Show overview">
+<!ENTITY caption.crossfade.effects "Crossfade effects">
+<!ENTITY checkbox.enable.crossfade.effects "Enable crossfade effects">
+<!ENTITY label.effect "Effect: ">
+<!ENTITY menuitem.random "random">
+<!ENTITY menuitem.fade.in.fade.out "Fade in / Fade out">
+<!ENTITY menuitem.zoom.effect "Zoom effect">
+<!ENTITY checkbox.fullscreen "Start in fullscreen.">
+<!ENTITY label.scannedtabs "Scanned tabs:">
+<!ENTITY menuitem.scannedtabs1 "Only current tab">
+<!ENTITY menuitem.scannedtabs2 "Current tab and all tabs to the right">
+<!ENTITY menuitem.scannedtabs3 "All open tabs in current window">
+
+<!ENTITY tab.images "Images">
+<!ENTITY label.imageselection "Please select which images should be shown in your slideshow.">
+<!ENTITY caption.imagelinks "Include linked images">
+<!ENTITY checkbox.imagelinks "always">
+<!ENTITY caption.images "Include images found directly on the page">
+<!ENTITY radio.images.never "never">
+<!ENTITY radio.images.always "always">
+<!ENTITY radio.images.ondemand "only if no linked images were found">
+<!ENTITY caption.images.minsize "Minimum size to get included">
+<!ENTITY label.image.minwidth "width:">
+<!ENTITY label.image.minheight "height:">
+<!ENTITY checkbox.zoom "Zoom small images.">
+<!ENTITY label.zoom.max "Max. zoom: ">
+<!ENTITY menuitem.zoom_1_5 "1.5x">
+<!ENTITY menuitem.zoom_2 "2x">
+<!ENTITY menuitem.zoom_4 "4x">
+<!ENTITY menuitem.zoom_window "window size">
+<!ENTITY label.maxgap "Maximum gap between image numbers:">
+
+<!ENTITY tab.overview "Appearance">
+<!ENTITY label.thumbs.size "Thumbnail size:">
+<!ENTITY checkbox.osmenu "Show on screen menu.">
+
+<!ENTITY label.commited.info "Changes become effective when the slideshow starts.">

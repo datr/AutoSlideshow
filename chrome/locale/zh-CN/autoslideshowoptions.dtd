@@ -1,0 +1,45 @@
+﻿<!ENTITY dialog.configure.autoslideshow "配置AutoSlideshow">
+<!ENTITY tab.general "General">
+<!ENTITY label.next.image.after "時間間隔：">
+<!ENTITY label.seconds "秒">
+<!ENTITY caption.action.after.last.image "演示完畢後：">
+<!ENTITY radio.end.slideshow "退出slideshow">
+<!ENTITY radio.restart.slideshow "重新slideshow">
+<!ENTITY radio.pause.slideshow "暫停slideshow">
+<!ENTITY radio.pause.overview "顯示鳥瞰圖">
+<!ENTITY caption.crossfade.effects "過渡效果">
+<!ENTITY checkbox.enable.crossfade.effects "開啟過渡效果">
+<!ENTITY label.effect "效果: ">
+<!ENTITY menuitem.random "隨機">
+<!ENTITY menuitem.fade.in.fade.out "漸入漸出">
+<!ENTITY menuitem.zoom.effect "縮放">
+<!ENTITY checkbox.fullscreen "開始演示時全屏.">
+<!ENTITY label.scannedtabs "檢索圖片於:">
+<!ENTITY menuitem.scannedtabs1 "僅當前頁面">
+<!ENTITY menuitem.scannedtabs2 "當前頁面及其右之頁面">
+<!ENTITY menuitem.scannedtabs3 "本窗口所有標簽頁">
+
+<!ENTITY tab.images "Images">
+<!ENTITY label.imageselection "在這裡設定將要被顯示的圖片.">
+<!ENTITY caption.imagelinks "包括直接被本網頁引用的圖片嗎？">
+<!ENTITY checkbox.imagelinks "是的">
+<!ENTITY caption.images "包括直接被引用的圖片嗎？">
+<!ENTITY radio.images.never "絕不">
+<!ENTITY radio.images.always "總是">
+<!ENTITY radio.images.ondemand "僅在沒有外鏈圖片時">
+<!ENTITY caption.images.minsize "設定圖片之最大尺寸">
+<!ENTITY label.image.minwidth "寬度:">
+<!ENTITY label.image.minheight "高度:">
+<!ENTITY checkbox.zoom "放大過小圖片.">
+<!ENTITY label.zoom.max "放大比例: ">
+<!ENTITY menuitem.zoom_1_5 "1.5x">
+<!ENTITY menuitem.zoom_2 "2x">
+<!ENTITY menuitem.zoom_4 "4x">
+<!ENTITY menuitem.zoom_window "適應窗口">
+<!ENTITY label.maxgap "限制前後兩張圖片編號間隔幅度:">
+
+<!ENTITY tab.overview "Appearance">
+<!ENTITY label.thumbs.size "鳥瞰圖之大小:">
+<!ENTITY checkbox.osmenu "在頁面中顯示控制工具.">
+
+<!ENTITY label.commited.info "所有設置在slideshow開始後即生效.">

@@ -1,0 +1,7 @@
+<!ENTITY dialog.title "Save images...">
+
+<!ENTITY dialog.caption "Selected images:">
+
+<!ENTITY dialog.folder "Destination folder:">
+
+<!ENTITY dialog.selectAll "Select all">

@@ -1,0 +1,49 @@
+<html class="slideshow">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<head>
+	<TITLE>AutoSlideshow:</TITLE>
+	<script type = "text/javascript" src = "mouseenter.js"></script>
+	<script type = "text/javascript" src = "slideshowdocument.js"></script>
+	<link rel="stylesheet" type="text/css" href="chrome://autoslideshow/skin/styles.css">
+</head>
+
+
+<body id="body" class="slideshow" onload="ssdInit();" onunload="ssdClose();" onabort="ssdClose();">
+
+<IMG id="slideshowImage" class="slideshow" src="chrome://autoslideshow/skin/loading.gif" ALT="" 
+	onload="ssdCenter('slideshowImage');" style="cursor:pointer">
+
+	<div class="menubar1" id="menubar">
+		<IMG id="close" class="button" SRC="../skin/OSClose.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+		<IMG id="play" class="button" SRC="../skin/OSPlay.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+		<img id="prev" class="button" SRC="../skin/OSPrev.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+		<div style="display:inline; height:100%; width: 50px;font-size:15px;font-family:courier;color: white;">
+			<div style="position:absolute;display:inline; top:5px; text-align:right;width:16px" id="imagenumber">
+			0
+			</div>
+			<div style="position:relative;display:inline; bottom:5px;" id="imagecount">
+			0
+			</div>
+		</div>
+		<img id="next" class="button" SRC="../skin/OSNext.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+		<img id="overview" class="button" SRC="../skin/OSOverview.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+		<img id="save" class="button" SRC="../skin/OSSave.gif" WIDTH="36" HEIGHT="36" ALT=""></img>
+	</div>
+	
+	<div id="thumbbar" class="thumbbar">
+		<div id="thumbbar_nav_back" class="thumbbox_nav_button_top">
+			<div id="thumbbar_nav_back_button" class="button" style="height:100%;text-align:center">
+				<img id="thumbbar_nav_back_button_img" src="../skin/up.gif" style="margin-top:5px; margin-bottom:5px"></img>
+			</div>
+		</div>
+		<div id="thumbbar_thumbs" class="thumbbar_thumbs"></div>
+		<div id="thumbbar_nav_forward" class="thumbbox_nav_button_bottom">
+			<div id="thumbbar_nav_forward_button" class="button" style="height:100%;text-align:center">
+				<img id="thumbbar_nav_forward_button_img" src="../skin/down.gif" style="margin-top:5px; margin-bottom:5px"></img>
+			</div>		
+		</div>
+	</div>
+</body>
+
+</html>

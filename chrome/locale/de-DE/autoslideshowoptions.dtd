@@ -1,0 +1,47 @@
+<!ENTITY dialog.configure.autoslideshow "AutoSlideshow Einstellungen">
+<!ENTITY tab.general "Allgemein">
+<!ENTITY label.next.image.after "Nächstes Bild nach">
+<!ENTITY label.seconds "Sekunden">
+<!ENTITY caption.action.after.last.image "Aktion wenn Ende der Slideshow erreicht">
+<!ENTITY radio.end.slideshow "Slideshow beenden">
+<!ENTITY radio.restart.slideshow "Von vorne beginnen">
+<!ENTITY radio.pause.slideshow "Pause">
+<!ENTITY radio.pause.overview "Zeige Überblick">
+<!ENTITY caption.crossfade.effects "Überblendeffekte">
+<!ENTITY checkbox.enable.crossfade.effects "Überblendeffekte aktiviert">
+<!ENTITY label.effect "Effekt: ">
+<!ENTITY menuitem.random "zufällig">
+<!ENTITY menuitem.fade.in.fade.out "Fade in / Fade out">
+<!ENTITY menuitem.zoom.effect "Zoom effect">
+<!ENTITY checkbox.fullscreen "Starte in Vollbild-Modus.">
+<!ENTITY label.scannedtabs "Durchsuchte Tabs:">
+<!ENTITY menuitem.scannedtabs1 "Nur aktueller Tab">
+<!ENTITY menuitem.scannedtabs2 "Aktueller Tab und alle Tabs rechts davon">
+<!ENTITY menuitem.scannedtabs3 "Alle geöffneten Tabs im aktuellem Fenster">
+
+<!ENTITY tab.images "Bilder">
+<!ENTITY label.imageselection "Bitte wählen Sie aus, welche Bilder in der Slideshow angezeigt werden.">
+<!ENTITY caption.imagelinks "Erfasse verlinkte Bilder">
+<!ENTITY checkbox.imagelinks "immer">
+<!ENTITY caption.images "Erfasse Bilder direkt auf der Seite">
+<!ENTITY radio.images.never "nie">
+<!ENTITY radio.images.always "immer">
+<!ENTITY radio.images.ondemand "nur wenn keine verlinkten Bilden gefunden wurden">
+<!ENTITY caption.images.minsize "Minimale Größe um erfasst zu werden">
+<!ENTITY label.image.minwidth "Breite:">
+<!ENTITY label.image.minheight "Höhe:">
+<!ENTITY checkbox.zoom "Kleine Bilder vergrößern.">
+<!ENTITY label.zoom.max "Max. Vergrößerung: ">
+<!ENTITY menuitem.zoom_1_5 "1.5x">
+<!ENTITY menuitem.zoom_2 "2x">
+<!ENTITY menuitem.zoom_4 "4x">
+<!ENTITY menuitem.zoom_window "Fenstergröße">
+<!ENTITY label.maxgap "Maximale Lücke zwischen Bildnummern:">
+
+<!ENTITY tab.overview "Aussehen">
+<!ENTITY label.thumbs.size "Thumbnailgröße:">
+<!ENTITY checkbox.osmenu "Zeige On Screen Menü.">
+
+<!ENTITY label.commited.info "Die Änderungen treten beim Starten der Slideshow in Kraft.">
+
+
